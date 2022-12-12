@@ -3,22 +3,35 @@
 
 <head>
     <title>-Bài Tập- tạo giao diện form đăng ký người dùng</title>
+    <style>
+        #A {
+            border: 1px solid rgb(15, 1, 1);
+            width: 150px;
+            height: 35px;
+        }
+
+        #B {
+            width: 160px;
+            background-color: pink;
+        }
+    </style>
 </head>
 
 <body>
     <form id="AA" action="DANG_KY_NGUOI_DUNG.PHP" method="post">
-        <h2>Họ và tên:</h2>
-        <input id="A" type="text" name="name" placeholder="tên đầy đủ" />
-        <h2>Email:</h2>
-        <input type="email" name="email" placeholder="ABC@email.com">
-        <h2>Số điện thoại:</h2>
-        <input type="number" name="phone" placeholder="Số điện thoại">
-        <h2>Giới tính</h2>
-        <input type="radio" name="gender" value="1" id="a" /><label for="a"><b>Nam</b></label>
-        <input type="radio" name="gender" value="0" id="b" /><label for="b"><b>Nữ</b></label><br>
-        <br>
-        <button type="submit">Đăng Ký</button>
-
+        <fieldset id="B">
+            <h2>Họ và tên:</h2>
+            <input id="A" type="text" name="name" placeholder="tên đầy đủ" />
+            <h2>Email:</h2>
+            <input id="A" type="email" name="email" placeholder="ABC@email.com">
+            <h2>Số điện thoại:</h2>
+            <input id="A" type="number" name="phone" placeholder="Số điện thoại">
+            <h2>Giới tính</h2>
+            <input type="radio" name="gender" value="1" id="a" /><label for="a"><b>Nam</b></label>
+            <input type="radio" name="gender" value="0" id="b" /><label for="b"><b>Nữ</b></label><br>
+            <br>
+            <button type="submit">Đăng Ký</button>
+        </fieldset>
     </form>
 </body>
 
