@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bài tập tạo form đơn giản (2)</title>
+    <style>
+        .P {
+            position: relative;
+            bottom: 36px;
+            left: -1px;
+        }
+
+        body {
+            background-color: rgb(238, 238, 162);
+            margin: 2px;
+            padding: 0px;
+        }
+
+        .A {
+            margin-left: 30px;
+        }
+
+        .B {
+            margin-left: 23px;
+        }
+
+        .C {
+            margin-left: 30px;
+        }
+
+        .D {
+            margin-left: 38px;
+        }
+
+        .F {
+            margin-left: 63px;
+        }
+
+        .G {
+            margin-left: 51px;
+        }
+
+        .H {
+            margin-left: 22px;
+        }
+
+        .AA {
+            width: 100px;
+            margin-left: 160px;
+            font-size: 15px;
+        }
+
+        .BB {
+            width: 100px;
+            font-size: 15px;
+        }
+
+        .Q {
+            padding: 5px;
+            text-align: center;
+            color: blue;
+            background-color: rgb(99, 235, 237);
+        }
+
+        div {
+            width: 500px;
+
+        }
+
+        .QQQQ {
+            text-align: center;
+            color: blue;
+        }
+
+        .P {
+            margin-left: 118px;
+            color: blue;
+
+        }
+
+        #Z {
+            margin-left: 117px;
+            color: blue;
+        }
+
+        #ZZ {
+            margin-left: -85px;
+        }
+
+        .MM {
+            width: 600px;
+            height: 300px;
+            border: 3px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="MM">
+        <form action="DANG_KY_HOC_VIEN.PHP" method="post">
+            <h2 class="Q">ĐĂNG KÝ HỌC VIÊN</h2>
+            <div class="QQQQ">
+                <span>Họ và tên</span><input type="text" name="NAME" class="A"><br>
+                <span>Ngày sinh </span><input type="text" name="DATE" class="B"><br>
+                <span id="ZZ">Giới tính </span><input type="radio" name="gioitinh" value="1" id="B" class="C"><label
+                    for="B">Nam</label>
+                <input type="radio" name="gioitinh" value="0" id="D"><label for="A">Nữ</label><br>
+            </div>
+            <span class="P">Địa Chỉ</span> <textarea name="DIACHI" cols="25" rows="3" class="D"></textarea><br>
+            <span id="Z">Lớp</span> <select class="F">
+                <option value="CHONLOP">--Chọn Lớp--</option>
+                <option value="TOAN">&lt;Toán&gt;</option>
+                <option value="LY">&lt;Lý&gt;</option>
+                <option value="HOA">&lt;Hóa&gt;</option>
+            </select><br>
+            <span id="Z">Email </span> <input type="email" name="MAIL" class="G"><br>
+            <span id="Z">Điện thoại</span> <input type="number" name="PHONE" class="H"><br>
+
+            <button type="submit" class="AA">Đăng ký</button>
+            <button type="reset" class="BB">Nhập lại</button>
+
+        </form>
+    </div>
+</body>
+
+</html>
